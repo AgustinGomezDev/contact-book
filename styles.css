@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+:root{
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+
+    --primary: #398AB9;
+    --secondary: #1C658C;
+    --gray: #EEEEEE;
+    --white: #fff;
+    --black: #000;
+    --delete: #fa5f49;
+}
+
+
+/* BACK TO HOMEPAGE */
+a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: var(--medium);
+    cursor: pointer;
+}
+
+a:hover{
+    filter: brightness(1.2);
+}
+
+input:focus, input:active{
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+}
+
+
+
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    color: var(--secondary);
+}
+
+h2{
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+form input{
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: .5rem;
+    border: none;
+    border: .1rem solid var(--primary);
+}
+
+form input[type="submit"]{
+    cursor: pointer;
+    border: .1rem solid transparent;
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+form input[type="submit"]:hover{
+    filter: brightness(1.2);
+}
+
+thead tr th{
+    font-size: 2rem;
+    font-weight: var(--medium);
+    text-align: center;
+    width: 15rem;
+}
+
+tbody tr td{
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+    text-align: center;
+    width: 15rem;
+    padding: .5rem;
+    padding-bottom: 2rem;
+    place-items: center;
+    
+}
+
+tbody tr td a{
+    text-decoration: none;
+    color: var(--white);
+    padding: .8rem;
+    cursor: pointer;
+    font-weight: var(--medium);
+    
+}
+
+tbody tr td a:hover{
+    filter: brightness(1.2);
+}
+
+.delete{
+    background-color: var(--delete);
+}
+
+.update{
+    background-color: var(--primary);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: .5rem;
+}
+
+p{
+    font-size: 2rem;
+    font-weight: var(--regular);
+    color: var(--black);
+}
